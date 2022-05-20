@@ -22,5 +22,6 @@ import SP1
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('', include('SP1.urls'))
+    url('', include('SP1.urls')),
+    path('userlogin/', include('django.contrib.auth.urls')),
 ]
